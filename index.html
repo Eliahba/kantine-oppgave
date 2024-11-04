@@ -1,30 +1,60 @@
 <!DOCTYPE html>
 <html lang="no">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kantina på Skolen</title>
-    <link rel="stylesheet" href="css.css">
+    <meta charset="UTF-8"> <!-- Angir tegnsettet til UTF-8 for å støtte norske bokstaver. -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Gjør siden responsiv på mobile enheter. -->
+    <title>Kantina på Skolen</title> <!-- Tittel som vises i nettleseren. -->
+    <link rel="stylesheet" href="css.css"> <!-- Kobler til CSS-stilarket for design. -->
 </head>
 <body>
-    <!-- Navigasjonsmeny -->
+    <!-- Navigasjonsmeny for å navigere mellom sidene -->
     <nav>
-        <a href="index.html">Hjem</a>
-        <a href="meny.html">Meny</a>
-        <a href="varer.html">Varer</a>
+        <a href="index.html">Hjem</a> <!-- Lenke til hjemmesiden. -->
+        <a href="meny.html">Meny</a> <!-- Lenke til meny-siden. -->
+        <a href="varer.html">Varer</a> <!-- Lenke til varer-siden. -->
     </nav>
 
-    <!-- Hjemmesideinnhold -->
+    <!-- Hjemmesideinnhold med en velkomsttekst -->
     <header>
         <h1>Kantina på Skolen</h1>
-        <p>Velkommen til skolekantina! Her finner du ukens meny og vår liste over tilgjengelige varer.</p>
+        <p>Velkommen til skolekantina! Her finner du ukens meny, vår liste over tilgjengelige varer, og kontaktinformasjon.</p>
     </header>
 
-    <!-- Flyttet kontaktinformasjon til bunnen av siden -->
+    <!-- Seksjon for "Dagens Rett" som oppdateres med JavaScript -->
+    <section id="dagens-rett">
+        <h2>Dagens Rett</h2>
+        <!-- JavaScript vil fylle inn innholdet her basert på dagens dato -->
+    </section>
+
+    <!-- Åpningstider for kantinen -->
+    <section id="apningstider">
+        <h2>Åpningstider</h2>
+        <p>Mandag - Fredag: 08:00 - 15:30</p>
+        <p>Stengt i helger og på helligdager.</p>
+    </section>
+
+    <!-- Tilbakemeldingsseksjon for å samle tilbakemeldinger fra brukerne -->
+    <section id="tilbakemelding">
+        <h2>Gi oss din tilbakemelding</h2>
+        <form> <!-- Skjema for å sende inn navn og melding -->
+            <label for="navn">Navn:</label>
+            <input type="text" id="navn" name="navn" placeholder="Ditt navn"> <!-- Navn-inputfelt -->
+
+            <label for="melding">Din melding:</label>
+            <textarea id="melding" name="melding" placeholder="Skriv din melding her..."></textarea> <!-- Meldingsfelt -->
+
+            <button type="submit">Send</button> <!-- Send-knapp -->
+        </form>
+    </section>
+
+    <!-- Kontaktinformasjon som er plassert som en fast bunntekst -->
     <footer id="kontaktinfo">
         <h2>Kontakt oss</h2>
         <p>E-post: kantine@skole.no</p>
         <p>Telefon: 123 45 678</p>
     </footer>
+
+    <!-- JavaScript-filen som inneholder logikken for å oppdatere dagens rett -->
+    <script src="script.js"></script>
 </body>
 </html>

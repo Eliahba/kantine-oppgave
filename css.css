@@ -1,6 +1,4 @@
-/* style.css */
-
-/* Eksisterende stil */
+/* Hovedstil for siden */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -12,9 +10,10 @@ body {
     align-items: center;
 }
 
+/* Navigasjonsmenyen */
 nav {
     width: 100%;
-    background-color: #4CAF50;
+    background-color: #4CAF50; /* Grønn bakgrunn for kantinens hovedfarge */
     padding: 15px;
     text-align: center;
 }
@@ -22,45 +21,61 @@ nav {
 nav a {
     color: white;
     margin: 0 15px;
-    text-decoration: none;
+    text-decoration: none; /* Fjerner underlinjen på lenkene */
     font-weight: bold;
 }
 
+/* Overskrifter */
 h1, h2 {
-    color: #4CAF50;
+    color: #4CAF50; /* Farge for å fremheve hovedoverskriftene */
 }
 
-header {
-    text-align: center;
-    padding: 20px;
-}
-
+/* Hovedseksjoner */
 section, footer {
     width: 100%;
-    max-width: 800px;
+    max-width: 800px; /* Maksimal bredde for å holde teksten sentrert */
     padding: 20px;
     background-color: white;
     margin: 20px;
     border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Gir skyggeeffekt rundt seksjonen */
 }
 
-/* Legger til stil for footer */
+/* Stil for tilbakemeldingsskjema */
+form {
+    display: flex;
+    flex-direction: column; /* Organiserer skjemaelementene vertikalt */
+}
+
+form input, form textarea {
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    width: 100%; /* Gjør input-feltene fullbredde */
+}
+
+form button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    margin-top: 10px;
+    cursor: pointer; /* Vis en peker når man holder musepekeren over knappen */
+}
+
+form button:hover {
+    background-color: #45a049; /* Endrer farge ved hover for en interaktiv effekt */
+}
+
+/* Footer */
 footer#kontaktinfo {
     position: fixed;
     bottom: 0;
     width: 100%;
-    background-color: #4CAF50;
+    background-color: #4CAF50; /* Grønn bakgrunn */
     color: white;
     text-align: center;
     padding: 10px;
-}
-
-footer#kontaktinfo h2, footer#kontaktinfo p {
-    margin: 5px 0;
-}
-
-/* Justerer for å gi plass til bunnteksten */
-main {
-    padding-bottom: 60px; /* Gir ekstra plass nederst for å unngå overlapp med bunnteksten */
 }
