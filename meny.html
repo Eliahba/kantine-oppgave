@@ -1,32 +1,73 @@
 <!DOCTYPE html>
 <html lang="no">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ukens Meny</title>
-    <link rel="stylesheet" href="css.css">
+    <meta charset="UTF-8"> <!-- Angir tegnsettet til UTF-8 for å støtte norske bokstaver. -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Gjør siden responsiv på mobile enheter. -->
+    <title>Ukens Meny</title> <!-- Tittel som vises i nettleseren. -->
+    <link rel="stylesheet" href="style.css"> <!-- Kobler til CSS-stilarket for design. -->
+    <link rel="stylesheet" href="css_meny.css"> <!-- Kobler til CSS-stilarket for design. -->
 </head>
 <body>
-    <!-- Navigasjonsmeny -->
+    <!-- Navigasjonsmeny for å navigere mellom sidene -->
     <nav>
-        <a href="index.html">Hjem</a>
-        <a href="meny.html">Meny</a>
-        <a href="varer.html">Varer</a>
+        <a href="index.html">Hjem</a> <!-- Lenke til hjemmesiden. -->
+        <a href="meny.html">Meny</a> <!-- Lenke til meny-siden. -->
+        <a href="varer.html">Varer</a> <!-- Lenke til varer-siden. -->
     </nav>
 
-    <!-- Menyinnhold -->
+    <!-- Hovedinnhold på menyside -->
     <header>
-        <h1>Ukens Meny</h1> <!-- Tittel for ukens meny. -->
+        <h1>Ukens Meny</h1> <!-- Overskrift som beskriver sidens innhold -->
+        <p>Her finner du ukens meny med våre varmretter for hver dag.</p> <!-- Kort beskrivelse av menyen -->
     </header>
-    <section id="ukens-meny">
-        <div class="dag" id="mandag">
-            <h2>Mandag</h2> <!-- Viser meny for mandag. -->
+
+    <!-- Ukentlig meny delt opp per dag -->
+    <section id="ukens-meny"> <!-- Seksjon for ukens meny -->
+
+        <!-- Mandag -->
+        <div class="dag" id="mandag"> <!-- Seksjon for mandag -->
+            <h2>Mandag</h2> <!-- Tittel for dagen -->
             <div class="rett">
-                <img src="bilder/varmrett1.jpg" alt="Spaghetti Bolognese"> <!-- Bilde av varmretten. -->
-                <p><strong>Spaghetti Bolognese</strong> - En klassisk italiensk rett. Pris: 40,-</p> <!-- Navn, beskrivelse og pris for retten. -->
+                <img src="bilder/varmrett1.jpg" alt="Spaghetti Bolognese"> <!-- Bilde av retten for mandag -->
+                <p><strong>Spaghetti Bolognese</strong> - En klassisk italiensk rett. Pris: 40,-</p> <!-- Navn, beskrivelse og pris for retten -->
             </div>
         </div>
-        <!-- Gjenta lignende seksjoner for andre ukedager -->
-    </section>
+
+        <!-- Tirsdag -->
+        <div class="dag" id="tirsdag"> <!-- Seksjon for tirsdag -->
+            <h2>Tirsdag</h2> <!-- Tittel for dagen -->
+            <div class="rett">
+                <img src="bilder/varmrett2.jpg" alt="Fiskeboller i hvit saus"> <!-- Bilde av retten for tirsdag -->
+                <p><strong>Fiskeboller i hvit saus</strong> - Serveres med poteter og gulrøtter. Pris: 35,-</p> <!-- Navn, beskrivelse og pris for retten -->
+            </div>
+        </div>
+
+        <!-- Onsdag -->
+        <div class="dag" id="onsdag"> <!-- Seksjon for onsdag -->
+            <h2>Onsdag</h2> <!-- Tittel for dagen -->
+            <div class="rett">
+                <img src="bilder/varmrett3.jpg" alt="Kylling tikka masala"> <!-- Bilde av retten for onsdag -->
+                <p><strong>Kylling tikka masala</strong> - Indisk krydret kylling med ris. Pris: 50,-</p> <!-- Navn, beskrivelse og pris for retten -->
+            </div>
+        </div>
+
+        <!-- Torsdag -->
+        <div class="dag" id="torsdag"> <!-- Seksjon for torsdag -->
+            <h2>Torsdag</h2> <!-- Tittel for dagen -->
+            <div class="rett">
+                <img src="bilder/varmrett4.jpg" alt="Vegetar lasagne"> <!-- Bilde av retten for torsdag -->
+                <p><strong>Vegetar lasagne</strong> - Hjemmelaget lasagne med grønnsaker. Pris: 45,-</p> <!-- Navn, beskrivelse og pris for retten -->
+            </div>
+        </div>
+
+        <!-- Fredag -->
+        <div class="dag" id="fredag"> <!-- Seksjon for fredag -->
+            <h2>Fredag</h2> <!-- Tittel for dagen -->
+            <div class="rett">
+                <img src="bilder/varmrett5.jpg" alt="Pizza"> <!-- Bilde av retten for fredag -->
+                <p><strong>Pizza</strong> - Hjemmelaget pizza med ost og skinke. Pris: 30,-</p> <!-- Navn, beskrivelse og pris for retten -->
+            </div>
+        </div>
+    </section> <!-- Slutt på seksjonen for ukens meny -->
 </body>
 </html>

@@ -1,0 +1,31 @@
+/* Stil for dagseksjonene i ukens meny */
+#ukens-meny {
+    width: 100%;
+    max-width: 800px; /* Maksimal bredde for å holde innholdet sentrert på større skjermer */
+    margin: auto; /* Sentrerer seksjonen horisontalt */
+}
+
+.dag {
+    margin-bottom: 30px; /* Avstand mellom dagene */
+}
+
+.dag h2 {
+    color: #4CAF50; /* Grønn farge på ukedagen for å matche sidens hovedtema */
+}
+
+.rett {
+    display: flex; /* Setter opp flexbox for å plassere bilde og tekst side ved side */
+    align-items: center; /* Justerer innholdet vertikalt sentrert */
+}
+
+.rett img {
+    width: 100px; /* Setter bredden på bildene til 100px */
+    height: auto; /* Bevarer bildets proporsjoner */
+    margin-right: 15px; /* Gir avstand mellom bilde og tekst */
+    border-radius: 8px; /* Runde hjørner for et mykere utseende */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Gir bilde en lett skygge for visuell effekt */
+}
+
+.rett p {
+    margin: 0; /* Fjerner ekstra margin rundt paragrafene */
+}
