@@ -1,5 +1,6 @@
 /* style.css */
 
+/* Eksisterende stil */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -13,7 +14,7 @@ body {
 
 nav {
     width: 100%;
-    background-color: #4CAF50; /* Grønn farge for kantinens hovedfarge */
+    background-color: #4CAF50;
     padding: 15px;
     text-align: center;
 }
@@ -26,7 +27,7 @@ nav a {
 }
 
 h1, h2 {
-    color: #4CAF50; /* Hovedfarge for titler */
+    color: #4CAF50;
 }
 
 header {
@@ -34,7 +35,7 @@ header {
     padding: 20px;
 }
 
-section {
+section, footer {
     width: 100%;
     max-width: 800px;
     padding: 20px;
@@ -44,23 +45,22 @@ section {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-.dag, .vare {
-    margin-bottom: 20px;
+/* Legger til stil for footer */
+footer#kontaktinfo {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    padding: 10px;
 }
 
-img {
-    width: 100px;
-    height: auto;
-    margin-right: 10px;
-    float: left; /* Flytter bildet til venstre for å få teksten ved siden av. */
+footer#kontaktinfo h2, footer#kontaktinfo p {
+    margin: 5px 0;
 }
 
-@media (max-width: 600px) {
-    img {
-        width: 80px;
-    }
-    nav a {
-        display: block;
-        margin: 10px 0; /* Justerer navigasjonen for mindre skjermer */
-    }
+/* Justerer for å gi plass til bunnteksten */
+main {
+    padding-bottom: 60px; /* Gir ekstra plass nederst for å unngå overlapp med bunnteksten */
 }
