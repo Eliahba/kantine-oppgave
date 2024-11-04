@@ -4,7 +4,7 @@
     <meta charset="UTF-8"> <!-- Angir tegnsettet til UTF-8 for å støtte norske bokstaver. -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Gjør siden responsiv på mobile enheter. -->
     <title>Kantina på Skolen</title> <!-- Tittel som vises i nettleseren. -->
-    <link rel="stylesheet" href="css.css"> <!-- Kobler til CSS-stilarket for design. -->
+    <link rel="stylesheet" href="style.css"> <!-- Kobler til CSS-stilarket for design. -->
 </head>
 <body>
     <!-- Navigasjonsmeny for å navigere mellom sidene -->
@@ -14,40 +14,42 @@
         <a href="varer.html">Varer</a> <!-- Lenke til varer-siden. -->
     </nav>
 
-    <!-- Hjemmesideinnhold med en velkomsttekst -->
-    <header>
-        <h1>Kantina på Skolen</h1>
-        <p>Velkommen til skolekantina! Her finner du ukens meny, vår liste over tilgjengelige varer, og kontaktinformasjon.</p>
-    </header>
+    <!-- Hovedinnhold plassert i main-seksjon for bedre struktur -->
+    <main>
+        <header>
+            <h1>Kantina på Skolen</h1>
+            <p>Velkommen til skolekantina! Her finner du ukens meny, vår liste over tilgjengelige varer, og kontaktinformasjon.</p>
+        </header>
 
-    <!-- Seksjon for "Dagens Rett" som oppdateres med JavaScript -->
-    <section id="dagens-rett">
-        <h2>Dagens Rett</h2>
-        <!-- JavaScript vil fylle inn innholdet her basert på dagens dato -->
-    </section>
+        <!-- Dagens Rett -->
+        <section id="dagens-rett">
+            <h2>Dagens Rett</h2>
+            <!-- Innhold for dagens rett vil bli fylt dynamisk av JavaScript -->
+        </section>
 
-    <!-- Åpningstider for kantinen -->
-    <section id="apningstider">
-        <h2>Åpningstider</h2>
-        <p>Mandag - Fredag: 08:00 - 15:30</p>
-        <p>Stengt i helger og på helligdager.</p>
-    </section>
+        <!-- Åpningstider for kantinen -->
+        <section id="apningstider">
+            <h2>Åpningstider</h2>
+            <p>Mandag - Fredag: 08:00 - 15:30</p>
+            <p>Stengt i helger og på helligdager.</p>
+        </section>
 
-    <!-- Tilbakemeldingsseksjon for å samle tilbakemeldinger fra brukerne -->
-    <section id="tilbakemelding">
-        <h2>Gi oss din tilbakemelding</h2>
-        <form> <!-- Skjema for å sende inn navn og melding -->
-            <label for="navn">Navn:</label>
-            <input type="text" id="navn" name="navn" placeholder="Ditt navn"> <!-- Navn-inputfelt -->
+        <!-- Tilbakemeldingsseksjon for å samle tilbakemeldinger fra brukerne -->
+        <section id="tilbakemelding">
+            <h2>Gi oss din tilbakemelding</h2>
+            <form> <!-- Skjema for å sende inn navn og melding -->
+                <label for="navn">Navn:</label>
+                <input type="text" id="navn" name="navn" placeholder="Ditt navn"> <!-- Navn-inputfelt -->
 
-            <label for="melding">Din melding:</label>
-            <textarea id="melding" name="melding" placeholder="Skriv din melding her..."></textarea> <!-- Meldingsfelt -->
+                <label for="melding">Din melding:</label>
+                <textarea id="melding" name="melding" placeholder="Skriv din melding her..."></textarea> <!-- Meldingsfelt -->
 
-            <button type="submit">Send</button> <!-- Send-knapp -->
-        </form>
-    </section>
+                <button type="submit">Send</button> <!-- Send-knapp -->
+            </form>
+        </section>
+    </main>
 
-    <!-- Kontaktinformasjon som er plassert som en fast bunntekst -->
+    <!-- Kontaktinformasjon som er plassert som en sticky footer i bunnen -->
     <footer id="kontaktinfo">
         <h2>Kontakt oss</h2>
         <p>E-post: kantine@skole.no</p>

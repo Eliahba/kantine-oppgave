@@ -1,4 +1,6 @@
-/* Hovedstil for siden */
+/* style.css */
+
+/* Setter opp body som flex container for å lage en sticky footer */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -7,7 +9,16 @@ body {
     color: #333;
     display: flex;
     flex-direction: column;
+    min-height: 100vh; /* Sørger for at body dekker hele høyden av vinduet */
+}
+
+/* Hovedcontaineren for innholdet */
+main {
+    flex: 1; /* Lar main-seksjonen ta opp tilgjengelig plass mellom nav og footer */
+    display: flex;
+    flex-direction: column;
     align-items: center;
+    padding: 20px;
 }
 
 /* Navigasjonsmenyen */
@@ -25,12 +36,11 @@ nav a {
     font-weight: bold;
 }
 
-/* Overskrifter */
+/* Seksjoner og generelle innstillinger */
 h1, h2 {
     color: #4CAF50; /* Farge for å fremheve hovedoverskriftene */
 }
 
-/* Hovedseksjoner */
 section, footer {
     width: 100%;
     max-width: 800px; /* Maksimal bredde for å holde teksten sentrert */
@@ -71,9 +81,6 @@ form button:hover {
 
 /* Footer */
 footer#kontaktinfo {
-    position: fixed;
-    bottom: 0;
-    width: 100%;
     background-color: #4CAF50; /* Grønn bakgrunn */
     color: white;
     text-align: center;
