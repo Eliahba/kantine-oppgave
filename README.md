@@ -42,7 +42,8 @@ Nettsiden er ment for elever og ansatte ved skolen for å raskt og enkelt få ov
 - **CSS**: For design og layout.
 - **JavaScript**: For dynamisk innhold, som å vise dagens rett basert på ukedag.
 
-## Filstruktur
+## Kildeliste
 
-Prosjektet er strukturert slik:
+- chatgpt (hentet mal til nettside)
 
+- W3school
